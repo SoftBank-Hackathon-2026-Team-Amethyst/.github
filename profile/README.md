@@ -68,7 +68,7 @@
 ### 🏗️ Infrastructure
 <div>
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon%20EKS-FF9900?style=for-the-badge&logo=amazoneks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20EKS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white"/>
   <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/k3d%20(On--Prem)-FFC61C?style=for-the-badge&logo=k3s&logoColor=black"/>
 </div>
