@@ -1,51 +1,100 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/SoftBank-Hackathon-2026-Team-Amethyst/one-tatchi-platform/main/docs/assets/one-touch-deploy.png" alt="원터치 배포 버튼을 누르는 토끼" width="480">
-</p>
+# 🎉 **SoftBank Hackathon 2026**
 
-<h1 align="center">💜 Team Amethyst · 완땃찌(원터치) 배포</h1>
+> **원터치로, 규칙대로, 어디에나 배포한다**
 
-<p align="center">
-  <b>로컬에서 만든 웹앱을 AI 에이전트가 분석하고,<br>컴플라이언스 검사를 통과한 변경만 AWS · GCP · 온프레미스에 배포합니다.</b>
-</p>
+금융권처럼 규제가 있는 곳에는 멀티클라우드와 **출구전략**이 필요하지만, 매번 사람이 인프라를 설계하기는 어렵습니다.<br>
+저희는 필수 검사를 **기본 템플릿**으로 먼저 깔아 두고, 그 위에서 **AI 에이전트가 배포를 준비하는 플랫폼**을 만들었습니다.
 
-<p align="center">
-  <img alt="SoftBank Hackathon 2026" src="https://img.shields.io/badge/SoftBank_Hackathon-2026-8E44AD?style=flat-square">
-  <img alt="Claude Code" src="https://img.shields.io/badge/Agent-Claude_Code-D97757?style=flat-square">
-  <img alt="Terraform" src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white">
-  <img alt="Helm" src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white">
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
-</p>
+<br>
 
 ---
 
-## 🐰 무엇을 하나요
+# 💜 Team Amethyst
 
-금융권처럼 규제가 있는 곳에는 멀티클라우드와 **출구전략**이 필요하지만, 매번 사람이 설계하기는 어렵습니다.
-그래서 정적분석 · 테스트 · 취약점 검사 같은 필수 항목을 **기본 템플릿**으로 먼저 깔아 두고,
-AI 에이전트는 서비스를 분석해 **변수만 채우고**, 배포 파이프라인이 규칙대로 반영합니다.
+<div align="center">
+  <img width="480" alt="원터치 배포 버튼을 누르는 토끼" src="https://raw.githubusercontent.com/SoftBank-Hackathon-2026-Team-Amethyst/one-tatchi-platform/main/docs/assets/one-touch-deploy.png" />
+</div>
 
-| 경로 | 흐름 |
-|---|---|
-| `/janto-deploy` (정석) | 질문 → 분석 → 배포 파일 생성 → `main` PR → 사람 리뷰 → 테스트 → 운영 |
-| `/yolo-deploy` (예외) | 리뷰 없이 테스트 환경까지. 검사가 실패하면 AI가 최대 3회 고쳐서 다시 올림 |
+<br>
 
-배포는 Blue-Green으로 테스트에 먼저 올라가고, AI가 승격 여부를 판단합니다. 규제 대상이면 운영 앞에서 사람이 승인합니다.
-
-## 📦 Repositories
-
-| 레포 | 설명 |
-|---|---|
-| [**one-tatchi-platform**](https://github.com/SoftBank-Hackathon-2026-Team-Amethyst/one-tatchi-platform) | 기본 템플릿: Terraform 모듈(AWS · GCP · 온프레미스), App Chart, 재사용 워크플로, 에이전트 스킬, Slack 봇 |
-| [**demo-app**](https://github.com/SoftBank-Hackathon-2026-Team-Amethyst/demo-app) | 배포 대상 데모 앱 (Vite React + Fastify + PostgreSQL). 템플릿을 태그로 참조만 함 |
-
-## 👥 Team
-
-<table>
+<table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/silano08"><img src="https://github.com/silano08.png" width="80"><br><b>원가연</b></a><br>플랫폼 코어</td>
-    <td align="center"><a href="https://github.com/soulee-dev"><img src="https://github.com/soulee-dev.png" width="80"><br><b>이소울</b></a><br>파이프라인</td>
-    <td align="center"><a href="https://github.com/hyeongrae-kim"><img src="https://github.com/hyeongrae-kim.png" width="80"><br><b>김형래</b></a><br>에이전트 스킬</td>
-    <td align="center"><a href="https://github.com/baejun10"><img src="https://github.com/baejun10.png" width="80"><br><b>배준범</b></a><br>데모 앱</td>
-    <td align="center"><a href="https://github.com/baekyutae"><img src="https://github.com/baekyutae.png" width="80"><br><b>배규태</b></a><br>AI 판단 · 리포트</td>
+    <td align="center"><img width="120" src="https://github.com/silano08.png" /></td>
+    <td align="center"><img width="120" src="https://github.com/soulee-dev.png" /></td>
+    <td align="center"><img width="120" src="https://github.com/hyeongrae-kim.png" /></td>
+    <td align="center"><img width="120" src="https://github.com/baejun10.png" /></td>
+    <td align="center"><img width="120" src="https://github.com/baekyutae.png" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>원가연</b><br><sub><a href="https://github.com/silano08">@silano08</a></sub><br><sub>플랫폼 코어</sub></td>
+    <td align="center"><b>이소울</b><br><sub><a href="https://github.com/soulee-dev">@soulee-dev</a></sub><br><sub>파이프라인</sub></td>
+    <td align="center"><b>김형래</b><br><sub><a href="https://github.com/hyeongrae-kim">@hyeongrae-kim</a></sub><br><sub>에이전트 스킬</sub></td>
+    <td align="center"><b>배준범</b><br><sub><a href="https://github.com/baejun10">@baejun10</a></sub><br><sub>데모 앱</sub></td>
+    <td align="center"><b>배규태</b><br><sub><a href="https://github.com/baekyutae">@baekyutae</a></sub><br><sub>AI 판단 · 리포트</sub></td>
   </tr>
 </table>
+
+<br>
+
+---
+
+# 🐰 완땃찌(원터치) 배포
+> 로컬에서 만든 웹앱을 AI 에이전트가 분석하고, 컴플라이언스 검사를 통과한 변경만 **AWS · GCP · 온프레미스**에 배포합니다.
+
+### 👨‍💻 For Developers — *One Touch*
+- `/janto-deploy` 한 번으로 **질문 → 분석 → 배포 파일 생성 → PR**까지
+- `/yolo-deploy`로 리뷰 없이 테스트 환경까지. 검사가 실패하면 **AI가 최대 3회 고쳐서** 다시 올림
+- 배포 결과를 **Slack**으로 받고, 버튼으로 승격 · 롤백
+
+<br>
+
+### 🏦 For Regulated Orgs — *Guardrails & Exit Strategy*
+- 정적분석 · 테스트 · 취약점 · 시크릿 · IaC 검사를 **기본 템플릿**으로 강제. AI는 변수만 채우고 본문은 못 고침
+- 같은 기능 계약 위에 **AWS · GCP · 온프레미스** 구현체를 두어 벤더를 바꿔도 앱은 그대로
+- **Blue-Green** 테스트 배포 → AI 승격 판단 → 규제 대상이면 운영 앞에서 **사람 승인**
+
+<br>
+
+---
+
+# 🧰 Core Tech Stack
+
+### 🤖 Agent
+<div>
+  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=claude&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Agent%20Skills-8E44AD?style=for-the-badge"/>
+</div>
+
+### 🏗️ Infrastructure
+<div>
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon%20EKS-FF9900?style=for-the-badge&logo=amazoneks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/k3d%20(On--Prem)-FFC61C?style=for-the-badge&logo=k3s&logoColor=black"/>
+</div>
+
+### 🚀 Delivery
+<div>
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Argo%20Rollouts-EF7B4D?style=for-the-badge&logo=argo&logoColor=white"/>
+</div>
+
+### 🛡️ Checks & Observability
+<div>
+  <img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=trivy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gitleaks-DC3545?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Slack%20Bolt-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
+</div>
+
+<br>
+
+---
+
+# 📂 Repository Structure
+
+| 저장소 | 설명 |
+|---|---|
+| **[one-tatchi-platform](https://github.com/SoftBank-Hackathon-2026-Team-Amethyst/one-tatchi-platform)** | 기본 템플릿. Terraform 모듈(AWS · GCP · 온프레미스), App Chart, 재사용 워크플로, 에이전트 스킬, Slack 봇 |
+| **[demo-app](https://github.com/SoftBank-Hackathon-2026-Team-Amethyst/demo-app)** | 배포 대상 데모 앱(Vite React + Fastify + PostgreSQL). 템플릿을 태그로 참조만 합니다 |
