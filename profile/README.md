@@ -41,14 +41,14 @@
 # 🐰 완땃찌(원터치) 배포
 > 로컬에서 만든 웹앱을 AI 에이전트가 분석하고, 컴플라이언스 검사를 통과한 변경만 **AWS · GCP · 온프레미스**에 배포합니다.
 
-### 👨‍💻 For Developers — *One Touch*
+### 👩‍💻 For Product Engineers — *One Touch*
 - `/janto-deploy` 한 번으로 **질문 → 분석 → 배포 파일 생성 → PR**까지
 - `/yolo-deploy`로 리뷰 없이 테스트 환경까지. 검사가 실패하면 **AI가 최대 3회 고쳐서** 다시 올림
 - 배포 결과를 **Slack**으로 받고, 버튼으로 승격 · 롤백
 
 <br>
 
-### 🏦 For Regulated Orgs — *Guardrails & Exit Strategy*
+### 🛡️ For Platform Engineers (DevSecOps) — *Guardrails & Exit Strategy*
 - 정적분석 · 테스트 · 취약점 · 시크릿 · IaC 검사를 **기본 템플릿**으로 강제. AI는 변수만 채우고 본문은 못 고침
 - 같은 기능 계약 위에 **AWS · GCP · 온프레미스** 구현체를 두어 벤더를 바꿔도 앱은 그대로
 - **Blue-Green** 테스트 배포 → AI 승격 판단 → 규제 대상이면 운영 앞에서 **사람 승인**
